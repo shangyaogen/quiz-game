@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1>Quiz Game</h1>
+            <p>测试一下你的知识储备吧</p>
+            <button id="start-btn" onclick="startQuiz()">开始答题</button>
+        </div>
+
+        <div id="quiz-screen" style="display:none;">
+            <div class="progress">
+                <span id="question-count">第 1/10 题</span>
+                <span id="score-display">得分: 0</span>
+            </div>
+            <div id="question-box">
+                <h2 id="question-text"></h2>
+                <div id="options"></div>
+            </div>
+            <div id="feedback" style="display:none;"></div>
+        </div>
+
+        <div id="result-screen" style="display:none;">
+            <h1>答题结束</h1>
+            <div id="final-score"></div>
+            <div id="result-msg"></div>
+            <button onclick="restartQuiz()">再来一次</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #16213e;
+    border-radius: 12px;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 28px;
+    color: #e94560;
+}
+
+#start-screen {
+    text-align: center;
+}
+
+#start-screen p {
+    color: #999;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 36px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #c73652;
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    color: #999;
+    font-size: 14px;
+}
+
+#question-text {
+    font-size: 20px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+    min-height: 60px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.option-btn {
+    background: #0f3460;
+    color: #eee;
+    border: 2px solid #0f3460;
+    padding: 14px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.option-btn:hover {
+    border-color: #e94560;
+    background: #1a1a4e;
+}
+
+.option-btn.correct {
+    background: #1b8a4e;
+    border-color: #1b8a4e;
+}
+
+.option-btn.wrong {
+    background: #8a1b1b;
+    border-color: #8a1b1b;
+}
+
+.option-btn.disabled {
+    pointer-events: none;
+}
+
+#feedback {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#feedback.correct {
+    background: rgba(27, 138, 78, 0.2);
+    color: #4caf50;
+}
+
+#feedback.wrong {
+    background: rgba(138, 27, 27, 0.2);
+    color: #f44336;
+}
+
+#result-screen {
+    text-align: center;
+}
+
+#final-score {
+    font-size: 48px;
+    font-weight: bold;
+    color: #e94560;
+    margin: 24px 0;
+}
+
+#result-msg {
+    color: #999;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
